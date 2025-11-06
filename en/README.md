@@ -1,0 +1,1 @@
+All the contents of [CYBERTEC](https://www.cybertec-postgresql.com/) in _english_ _locale_
