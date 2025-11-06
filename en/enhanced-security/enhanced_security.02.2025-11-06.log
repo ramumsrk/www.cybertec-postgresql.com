@@ -1,0 +1,135 @@
+/******** QUERY *********/
+SHOW log_connections
+/************************/
+
+     Column      | Type 
+-----------------+------
+ log_connections | text
+(1 row)
+
+/******** QUERY *********/
+SHOW log_connections
+/************************/
+
+ log_connections 
+-----------------
+ all
+(1 row)
+
+/******** QUERY *********/
+SHOW log_disconnections
+/************************/
+
+ log_disconnections 
+--------------------
+ on
+(1 row)
+
+/******** QUERY *********/
+ALTER DATABASE postgres REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+SELECT x FROM {1,2,3,4,5} x
+/************************/
+
+/******** QUERY *********/
+SELECT x FROM '{1,2,3,4,5}' x
+/************************/
+
+/******** QUERY *********/
+SELECT datname FROM pg_catalog.pg_database WHERE datname <> 'postgres'
+/************************/
+
+          datname           
+----------------------------
+ medium_dot_com
+ template1
+ template0
+ www_dot_postgresql_dot_org
+ colors
+ fruits
+ kineteco
+ northwind
+ usda
+ pagila
+ adventure_works
+(11 rows)
+
+/******** QUERY *********/
+SELECT datname FROM pg_catalog.pg_database WHERE datname NOT IN ('postgres', 'template0', 'template1')
+/************************/
+
+          datname           
+----------------------------
+ medium_dot_com
+ www_dot_postgresql_dot_org
+ colors
+ fruits
+ kineteco
+ northwind
+ usda
+ pagila
+ adventure_works
+(9 rows)
+
+         Connection Information
+      Parameter       |      Value      
+----------------------+-----------------
+ Database             | postgres
+ Client User          | postgres
+ Socket Directory     | /run/postgresql
+ Server Port          | 5432
+ Options              | 
+ Protocol Version     | 3.0
+ Password Used        | false
+ GSSAPI Authenticated | false
+ Backend PID          | 17970
+ SSL Connection       | false
+ Superuser            | on
+ Hot Standby          | off
+(12 rows)
+
+/******** QUERY *********/
+ALTER DATBASE medium_dot_com REFRESH COLLATION VERSION
+/************************/
+
+/******** QUERY *********/
+ALTER DATABASE medium_dot_com REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+ALTER DATABASE www_dot_linkedin_dot_com_learning REFRESH COLLATION VERSION
+/************************/
+
+/******** QUERY *********/
+ALTER DATABASE www_dot_postgresql_dot_org REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+ALTER DATABASE northwind REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+ALTER DATABASE pagila REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+ALTER DATABASE usda REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+ALTER DATABASE adventure_works REFRESH COLLATION VERSION
+/************************/
+
+ALTER DATABASE
+/******** QUERY *********/
+SHOW client_max_messages
+/************************/
+

@@ -1,0 +1,9 @@
+/******** QUERY *********/
+SHOW log_connections
+/************************/
+
+ log_connections 
+-----------------
+ 
+(1 row)
+
